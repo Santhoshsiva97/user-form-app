@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import DateComponent from './user/DateComponent';
+import User from './user/User';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img className="App-logo" />
+            <Routes>
+              <Route index element={<User props={this.props} location={window.location} history={window.history} />} />
+                <Route path="/date" element={<DateComponent props={this.props} location={window.location} history={window.history} />} />
+                {/* {(props) => <DateComponent {...props} />} 
+              </Route> */}
+            </Routes>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
