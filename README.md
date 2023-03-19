@@ -2,7 +2,7 @@
 
 ## Follow below steps to run the process
 
-### `git clone`
+### `git clone https://github.com/Santhoshsiva97/user-form-app.git`
 
 ### `npm install`
 
