@@ -2,11 +2,19 @@
 
 ## Follow below steps to run the process
 
+## Step 1:
+
 ### `git clone https://github.com/Santhoshsiva97/user-form-app.git`
+
+## Step 2:
+
+### cd user-form-app
+
+## Step 3:
 
 ### `npm install`
 
-In the project directory, you can run:
+## Step 4:
 
 ### `npm start`
 
